@@ -1,4 +1,4 @@
-<h1 class = "center">
+<h1 align = "center">
   GroceryStore
 </h1>
 Flask based Grocery e-commerce application
