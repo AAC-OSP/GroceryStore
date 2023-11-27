@@ -1,4 +1,6 @@
-# GroceryStore
+<h1 class = "center">
+  GroceryStore
+<h1/>
 Flask based Grocery e-commerce application
 
 
