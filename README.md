@@ -21,4 +21,12 @@ The app has SQLite named **database.sqlite3** database with 7 tables in the data
 |sales|product_id(string, primary key), category_id(string), quantity(numeric), sale(numeric)|
 |purchases|Transaction_id(string, primary key), user_id(string), price(numeric), date(string)|
 
+# API Design
+This application uses a total of 9 REST APIs to collect and process user data. All of the APIs use only **post** method as HTML does not support **put** and **delete** requests. The main tasks they take care of includes adding, editing and deleting of products and categories by managers, editing and deleting purchases of users and search feature. 
+
+# Architecture and Features
+The project starts with **start.sh** that is located in code folder(**GroceryStore folder). README file contains information on how to start the application. Database interactions are taken care by models, located in **models.py** in models folder and helper functions, located in **helpers.py** in Helpers folder. Database and **db.py** file which creates instance of SQLAlchemy reside in database folder. All the APIs reside in **api.py** of API folder. HTML and CSS files are in **templates** and **static** folders respectively. Controllers are in **app.py**
+
+In the application only one manager exists. The manager can create categories which is empty by default, manager can add products under each category along with necessary information like stock, price etc. Manager is allowed to delete products and categories. If a non-empty category is deleted, all the products that belong to the category are also deleted. Users can see all the categories and products added by the managers in their respective dashboards. They can buy one quantity of any product by clicking **Add to cart** or add the quantity they like by selecting **Buy now**. All the products they buy among any category are displayed in cart as they are saved in cart table. In cart, they can edit and delete any purchase. 
+
 
