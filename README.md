@@ -1,6 +1,11 @@
 <h1 align = "center">
   GroceryStore
 </h1>
+<div align="row">
+  <img src="https://img.shields.io/pypi/pyversions/tensorflow.svg">
+<img src="https://flask.palletsprojects.com/en/3.0.x/_images/flask-horizontal.png" style="width:152px; height:20px;">
+<img src="https://sqlite.org/forum/logo?id=603c155e" style="width:152px; height:20px;">
+</div>
 Flask based Grocery e-commerce application
 
 
