@@ -50,7 +50,9 @@ insert link
 
 # How to use
 1. Clone this repo. <br>
-
+- ```terminal
+   git clone https://github.com/AAC-OSP/GroceryStore
+   ```
 1. Install the required libraries from [Requirements](#requirements) <br>
 1. Execute the python script <br>
 1. Add star to this repo if you liked it 😄
